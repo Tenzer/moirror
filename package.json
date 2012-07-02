@@ -1,0 +1,14 @@
+{
+  "name": "moirror",
+  "version": "0.0.0",
+  "description": "Mirror monitor program for OpenIndiana",
+  "main": "app.js",
+  "dependencies": {
+    "async": "~0.1.22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Tenzer/moirror.git"
+  },
+  "author": "Jeppe Toustrup"
+}
