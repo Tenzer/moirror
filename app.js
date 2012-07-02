@@ -25,8 +25,7 @@ function testMirrors (err, list) {
   if (err) {
     console.error('Error:', err);
   } else {
-    //async.filter(list, methods.testMirror, generateResultObject);
-    generateResultObject(list);
+    async.filter(list, methods.testMirror, generateResultObject);
   }
 }
 
