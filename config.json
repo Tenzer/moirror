@@ -2,6 +2,7 @@
   "timeout": 5000,
   "hostname": "dlc.openindiana.org",
   "path": "/.mirrorstatus",
+  "expected_bytes": 11,
   "mirrors": [
     { "name": "dlc-1.de", "enabled": true,  "country": "de", "priority": 100, "ipv4": "178.63.85.241", "ipv6": "2a01:4f8:121:3484::f1" },
     { "name": "dlc-3.de", "enabled": true,  "country": "de", "priority": 100, "ipv4": "78.46.118.46", "ipv6": "2a01:38:8007:1:f47f:1eff:fed2:8940" },
