@@ -1,9 +1,9 @@
-var mirrors = require(__dirname + '/mirrors.json');
+var config = require(__dirname + '/config.json');
 var methods = require(__dirname + '/lib/methods.js');
 var async = require('async');
 
 // Filter out mirrors which aren't enabled
-async.filter(mirrors.list, methods.isMirrorEnabled, processEnabled);
+async.filter(config.list, methods.isMirrorEnabled, processEnabled);
 
 // Generate a list of mirror addresses along with their country
 function processEnabled (list) {
