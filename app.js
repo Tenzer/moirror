@@ -36,7 +36,7 @@ function generateResultObject (list) {
       all[item.record] = [];
     }
 
-    all[item.record].push([item.hostname, 10]);
+    all[item.record].push([item.hostname, item.priority]);
 
     if (!regions.hasOwnProperty(item.country)) {
       regions[item.country] = {};
@@ -46,7 +46,7 @@ function generateResultObject (list) {
       regions[item.country][item.record] = [];
     }
 
-    regions[item.country][item.record].push([item.hostname, 10]);
+    regions[item.country][item.record].push([item.hostname, item.priority]);
   }
 
   var all = {
