@@ -59,6 +59,15 @@ function generateResultObject (list) {
     addRecord(list[i]);
   }
 
+  // Fill regions with the opposite A or AAAA records if missing
+  for (i = 0; i < regions.length; i++) {
+    if (!regions[i].hasOwnProperty('a')) {
+      regions[i].a = all.a;
+    } else if (!regions[i].hasOwnProperty('aaaa')) {
+      regions[i].aaaa = all.aaaa;
+    }
+  }
+
   var result = {
     serial: methods.serialDate(),
     data: {
