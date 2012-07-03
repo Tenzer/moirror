@@ -60,11 +60,11 @@ function generateResultObject (list) {
   }
 
   // Fill regions with the opposite A or AAAA records if missing
-  for (i = 0; i < regions.length; i++) {
-    if (!regions[i].hasOwnProperty('a')) {
-      regions[i].a = all.a;
-    } else if (!regions[i].hasOwnProperty('aaaa')) {
-      regions[i].aaaa = all.aaaa;
+  for (var region in regions) {
+    if (!regions[region].hasOwnProperty('a')) {
+      regions[region].a = all.a;
+    } else if (!regions[region].hasOwnProperty('aaaa')) {
+      regions[region].aaaa = all.aaaa;
     }
   }
 
