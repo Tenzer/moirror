@@ -10,6 +10,6 @@
     { "name": "dlc-1.sk", "enabled": true,  "country": "sk", "priority": 100, "ipv4": "91.210.182.13", "ipv6": "2a01:5200:200::5bd2:b6d" },
     { "name": "dlc-1.uk", "enabled": false, "country": "gb", "priority": 100, "ipv4": "91.194.75.37" },
     { "name": "dlc-1.us", "enabled": true,  "country": "us", "priority": 100, "ipv4": "199.192.241.138" },
-    { "name": "dlc-1.us", "enabled": false, "country": "us", "priority": 100, "ipv4": "184.22.193.193" }
+    { "name": "dlc-2.us", "enabled": false, "country": "us", "priority": 100, "ipv4": "184.22.193.193" }
   ]
 }
