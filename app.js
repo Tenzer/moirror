@@ -16,7 +16,6 @@ function flattenResults (err, list) {
     console.error('Error:', err);
   } else {
     async.concat(list, methods.flattenArray, testMirrors);
-    //testMirrors(methods.flattenArray(list));
   }
 }
 
