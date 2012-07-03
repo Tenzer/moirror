@@ -1,0 +1,11 @@
+{
+  "timeout": 5000,
+  "hostname": "pkgfiles.openindiana.org",
+  "path": "/.mirrorstatus",
+  "expected_bytes": 11,
+  "mirrors": [
+    { "name": "pkgfiles-1.dk", "enabled": true,  "country": "dk", "priority": 100, "ipv4": "82.103.191.201", "ipv6": "2a00:9080:1000::201" },
+    { "name": "pkgfiles-1.sk", "enabled": true,  "country": "sk", "priority": 100, "ipv4": "91.210.182.13", "ipv6": "2a01:5200:200::5bd2:b6d" },
+    { "name": "pkgfiles-1.us", "enabled": true,  "country": "us", "priority": 100, "ipv4": "199.192.241.50" },
+  ]
+}
