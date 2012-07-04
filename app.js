@@ -3,7 +3,8 @@ if (!process.argv[2]) {
   process.exit(1);
 }
 
-var config = require('./' + process.argv[2]);
+var config = require('./' + process.argv[2]); // Could most likely be made better
+var package_json = require(__dirname + '/package.json');
 var async = require('async');
 var util = require('util');
 var http = require('http');
@@ -87,7 +88,10 @@ function testMirrors (err, list) {
   function testMirror (item, callback) {
     item.path = config.path;
     item.headers = {
-      Host: config.hostname
+      Host: config.hostname,
+      'User-Agent': 'moirror/' + package_json.version +
+        ' (Node/' + process.versions.node +
+        '; +https://github.com/Tenzer/moirror)'
     };
 
     var req = http.get(item, function (res) {
