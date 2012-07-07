@@ -4,7 +4,8 @@
   "description": "Mirror monitor program for OpenIndiana",
   "main": "app.js",
   "dependencies": {
-    "async": "~0.1.22"
+    "async": "~0.1.22",
+    "restify": "~1.4.3"
   },
   "repository": {
     "type": "git",
